@@ -1,167 +1,172 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-  
-    body{
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-family: 'Source Sans 3', sans-serif;
-    background-color:#EAEAEA;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
-  
-  .container1{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    background: #EAEAEA;
-    
-  }
-  
-  .container1 img{
-    height: 30vh;
-    max-width: 100%;
-  }
-  
-  .container2{
-    border-radius: 32px 32px 0px 0px;
-    background:#FAFAFA;
-    padding: 30px 10px;
-    gap: 4px;
-    height: 70vh;
-    box-shadow: 4px 4px 25px 0px #010AD94D;
-    box-shadow: 4px 4px 25px 0px #030B564D;
-  }
-  
-  .Welcome{
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .Welcome p:first-of-type{
-    color: #333;
-    font-size: 18px;
-    font-family: Source Sans 3;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .Welcome p:nth-of-type(2){
-    font-size: 10px;
-    padding-bottom: 26px;
-  }
-  
-  .inputname {
-    color: var(--black-800, #292929);
-    font-size: 14px;
-  }
-  
 
-  
-  input[type="email"] {
-    width: 100%;
-    padding: 16px;
-    align-items: center;
-    gap: 8px;
-    background-color: inherit;
-    border-radius: 8px;
-    border: 2px solid #808080;
-    margin-bottom: 26px;
+  body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+  background-color:#EAEAEA;
 }
+
+.container1{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  background: #EAEAEA;
+ 
+}
+
+.container1 img{
+  height: 30vh;
+  max-width: 100%;
+}
+
+.container2{
+  border-radius: 32px 32px 0px 0px;
+  background:#FAFAFA;
+  padding: 30px 10px;
+  gap: 4px;
+  height: 70vh;
+  box-shadow: 4px 4px 25px 0px #010AD94D;
+  box-shadow: 4px 4px 25px 0px #030B564D;
+}
+
+.Welcome{
+  padding: 10px;
+  text-align: center;
+}
+
+.Welcome p:first-of-type{
+  color: #333;
+  font-size: 18px;
+  font-family: Source Sans 3;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.Welcome p:nth-of-type(2){
+  font-size: 10px;
+  padding-bottom: 26px;
+}
+
+.inputname {
+  color: var(--black-800, #292929);
+  font-size: 14px;
+  margin: 10px;
+}
+
+
+
+
+input[type="email"] {
+  width: 100%;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  background-color: inherit;
+  border-radius: 8px;
+  border: 2px solid #808080;
+  margin-bottom: 26px;
+}
+
 
 .passworddiv{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    border-radius: 8px;
-    border: 2px solid #808080;
-    padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-radius: 8px;
+  border: 2px solid #808080;
+  padding: 16px;
 }
 
 
-  input[type="password"] {
-    border: none;
-    appearance: none;
-    outline: none;
-    background: none;
-  }
-  
-  input[type="email"]::placeholder,
-  input[type="password"]::placeholder {
-    color:#EAEAEA;
-  }
-  .checkdiv{
-    display: flex;
-    justify-content: space-evenly;
-    font-style: normal;
+
+
+input[type="password"] {
+  border: none;
+  appearance: none;
+  outline: none;
+  background: none;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color:#EAEAEA;
+}
+.checkdiv{
+  display: flex;
+  justify-content: space-evenly;
+  font-style: normal;
+
 
 }
 .remember{
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      font-style: italic;
-  } 
-  .logindiv{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: 18px auto;
+    font-style: italic;
 }
-  
-  
-  button {
-    display: flex;
-    width: 180px;
-    padding: 12px 48px;
-    justify-content: center;
-    margin: 10px;
-    display: flex;
-    gap: 8px;
-    margin:10px auto;
-    border-radius: 8px;
-    border: 1px solid #0A4D56;
-    background: #A6E4EC;
+.logindiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+button {
+  display: flex;
+  width: 180px;
+  padding: 12px 48px;
+  justify-content: center;
+  margin: 10px;
+  display: flex;
+  gap: 8px;
+  margin:10px auto;
+  border-radius: 8px;
+  border: 1px solid rgba(10, 77, 86, .5);
+  background: #A6E4EC;
+}
+
+@media screen and (min-width: 1024px) {
+  body{
+     
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
   }
-  
-  @media screen and (min-width: 1024px) {
-    body{
-        
-        display: grid;
-        grid-template-columns: 1.3fr 1fr;
-    }
-    .container1{
-        height: 80vh;
-        flex-shrink: 0;
-    }
-    .container1 img{
-        height: 100vh; 
-        max-width: 100%;
-      }
-    .container2{
-        border-radius: 0;
-        gap: 72px;
-        padding: 150px 56px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #FEFEFE;
-      }
-      .Welcome p:first-of-type{
-        font-size: 32px;
-      }
-      .Welcome p:nth-of-type(2){
-        font-size: 20px;
-      }
-      .logindiv {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
+  .container1{
+      height: 80vh;
+      flex-shrink: 0;
   }
-   }
-  
+  .container1 img{
+      height: 100vh;
+      max-width: 100%;
+    }
+  .container2{
+      border-radius: 0;
+      gap: 72px;
+      padding: 150px 56px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #FEFEFE;
+    }
+    .Welcome p:first-of-type{
+      font-size: 32px;
+    }
+    .Welcome p:nth-of-type(2){
+      font-size: 20px;
+    }
+    .logindiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+}
+ }
