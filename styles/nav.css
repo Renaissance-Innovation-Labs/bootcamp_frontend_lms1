@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .main-sec{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    border-radius: 30px;
+    background-color: #F9F9F9;
+} */
+
+/* .main-sec{
+    display: grid;
+    grid-template-columns: 0.7fr 3fr;
+    background: #F9F9F9;
+    
+} */
+
+ul{
+    display: grid;
+    gap: 50px;
+}
+
+a li{
+    list-style: none;
+    color: rgba(37, 35, 35, 1);
+}
+
+a li:hover{
+    color: rgb(0, 12, 24);
+    font-weight: 600;
+} 
+
+a{
+    text-decoration: none;
+}
+
+.nav-div, h3{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 40px 2px 12px;
+}
+
+.nav{
+    display: none;
+    height: fit-content;
+}
+
+.main-sec{
+    position: relative;
+}
+
+
+.show{
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    display: grid;
+    gap: 18px;
+    background-color: #EAEAEA;
+    transition: 3ms;
+    height: 100vh;
+    width: 200px;
+    /* padding-bottom: 410px; */
+    padding-top: 8px;
+}
+ul{
+    place-content: start;
+    display: grid;
+    gap: 40px;
+    padding: 0px;
+    margin: 0;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+}
+
+
+.fa-bars{
+    cursor: pointer;
+}
+
+.dash-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    padding-right: 20px; 
+    position: absolute;
+    top: 10px;
+    gap: 60px;
+}
+
+.fa-xmark{
+    cursor: pointer;
+}
+
+.nav-sec{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    
+}
+
+
+@media screen and (min-width: 760px){
+    .fa-xmark{
+        display: none;
+    }
+
+    .nav-sec{
+        display: none;
+    }
+
+    .fa-magnifying-glass{
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .search{
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 0px;
+        width: 200px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+    }
+    
+    input{
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+    }
+    
+    input[type=search]::placeholder{
+        font-size: 20px;
+    }
+
+    .profile-icon p{
+        font-size: 18px;
+        
+    }
+
+    h1{
+        margin-top: 30px;
+    }
+
+    .main-sec{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .nav{
+        top: 0px;
+        left: 0px;
+        display: grid;
+        gap: 0px;
+        padding: 40px;
+        margin: 5px;
+        height: 100vh;
+        width: 213px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    ul{
+        place-content: start;
+        display: grid;
+        gap: 40px;
+        padding: 0px;
+        margin: 0;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+    }
+
+    .dash-head{
+        padding-top: 0;
+        top: 0px;
+    }
+
+    main{
+        top: 5px;
+        position: relative;
+        margin-left: 214px;
+        background: #F9F9F9;
+    }
+
+
+}
