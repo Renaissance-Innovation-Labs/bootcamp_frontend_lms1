@@ -346,12 +346,13 @@ aside h3{
     }
 
     .message-assign{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
     }
 
     article p{
-        width: 400px;
+        width: 100%;
     }
 
     aside{
@@ -402,10 +403,13 @@ aside h3{
     }
 
     .message-assign{
-        display: flex;
-        gap: 24px;
-        padding: 24px;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+    }
+
+    article{
+        margin: 0px;
     }
 
     article p{
