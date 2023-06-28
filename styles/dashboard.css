@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Source Sans 3', sans-serif;
+    position: relative;
+    background-color: #F9F9F9;
 }
 
 
@@ -17,33 +19,18 @@ a.dashboard li{
 
 .dash1{
     background: #FFF;
-}
-
-main{
-    width: 100vw;
+    width: 97%;
 }
 
 header{
     display: none;
 }
 
-.search{
-    border: 1px solid #000;
-    border-radius: 20px;
-    padding: 5px 10px;
-}
-
-input{
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-}
-
 .profile-icon{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 10px;
 }
 
 h2{
@@ -121,7 +108,6 @@ margin-left: 15px;
     gap: 1px;
     align-items: center;
     justify-content: center;
-    width: fit-content;
 }
 
 .course-head{
@@ -274,15 +260,6 @@ aside h3{
 }
 
 @media screen and (min-width: 760px) {
-    /* body{
-        padding: 20px 15px;
-    } */
-    main{
-        display: grid;
-        margin-top: 30px;
-        gap: 20px;
-        width: 100%;
-    }
 
     .dash1{
         background: inherit;
@@ -290,14 +267,14 @@ aside h3{
     }
 
     .search{
-        padding: 10px 90px 10px 14px;
+        padding: 0px;
     }
 
     header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 20px;
+        padding: 10px 20px;
         
     }
 
@@ -314,7 +291,15 @@ aside h3{
     .New-Courses{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+        gap: 12px;
+    }
+
+    .enroll{
+        justify-self: left;
+    }
+
+    .message-assign{
+        padding: 14px;
     }
 
     .hr{
@@ -325,7 +310,11 @@ aside h3{
 @media screen and (min-width: 1024px) {
 
     .search{
-        padding: 16px 240px 16px 24px;
+        width: 300px;
+    }
+    
+    .profile-icon{
+        gap: 15px;
     }
 
     .view-div{
@@ -339,7 +328,7 @@ aside h3{
     }
 
     .New-Courses{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
     }
 
@@ -358,6 +347,7 @@ aside h3{
 
     .message-assign{
         display: flex;
+        justify-content: space-between;
     }
 
     article p{
@@ -370,13 +360,7 @@ aside h3{
     }
 }
 
-@media (min-width: 1400px) {
-    /* body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 42px 32px 42px 31px;
-    } */
+@media (min-width: 1300px) {
 
     .main-sec{
         padding: 10px 40px;
@@ -386,68 +370,40 @@ aside h3{
         font-size: 24px;
     }
     .New-Courses{
-        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: repeat(4, 1fr);
         align-items: center;
-        padding: 24px 28px;
-        gap: 36px;
+        padding: 24px 28px; */
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 25px;
     }
 
-    /* .courses{
+    .courses{
         padding: 18px;
         width: fit-content;
-    } */
+    }
+
     .courses h3{ 
         font-size: 20px;
     }
 
-    .course-img1 img{
-        width: 60px;
-        
-    }
-
-    .course-img2 img{
-        width: 60px;
-        
-    }
-
-    .course-img3 img{
-        width: 60px;
-        
-    }
-
-    .course-img4 img{
-        width: 60px;
-        
-    }
-
     .course-img1{
-        padding: 20px 70px;
-        width: fit-content;
-        
+        padding: 15px 50px;
     }
-
     .course-img2{
-        padding: 20px 70px;
-        width: fit-content;
+        padding: 15px 50px;
     }
-
     .course-img3{
-        padding: 20px 70px;
-        width: fit-content;
+        padding: 15px 50px;
     }
-
     .course-img4{
-        padding: 20px 70px;
-        width: fit-content;
-    }
-    
-    .courses h3{
-        font-size: 20px;
+        padding: 15px 50px;
     }
 
     .message-assign{
         display: flex;
-        gap: 64px;
+        gap: 24px;
         padding: 24px;
         justify-content: space-between;
     }
