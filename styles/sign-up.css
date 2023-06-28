@@ -104,7 +104,6 @@ button {
 
 @media screen and (min-width: 1024px) {
   body{
-    background-color: red;
       height: 100vh;
       display: grid;
       grid-template-columns: 1.3fr 1fr;
