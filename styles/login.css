@@ -130,6 +130,9 @@ button {
   border: 1px solid rgba(10, 77, 86, .5);
   background: #A6E4EC;
 }
+a {
+  text-decoration: none;
+}
 
 @media screen and (min-width: 1024px) {
   body{
