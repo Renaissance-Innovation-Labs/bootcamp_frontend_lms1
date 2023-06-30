@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.main-sec{
+    background-color: #EAEAEA;
+}
+
+
 /* .main-sec{
     display: flex;
     justify-content: center;
@@ -111,6 +116,58 @@ ul{
 
 
 @media screen and (min-width: 760px){
+    body{
+        position: relative;
+    }
+
+    .main-sec{
+        position: relative;
+        height: 250vh;
+        width: 100%;
+        background-color: #EAEAEA;
+    }
+
+    .nav{
+        top: 0px;
+        left: 0px;
+        display: grid;
+        gap: 0px;
+        padding: 40px;
+        margin: 5px;
+        height: 100vh;
+        width: 213px;
+        position: fixed;
+        background-color: #EAEAEA;
+        z-index: 1;
+        border-right: 1px solid rgba(94, 98, 107, 0.10);
+    }
+
+    ul{
+        place-content: start;
+        display: grid;
+        gap: 40px;
+        padding: 0px;
+        margin: 0;
+        position: absolute;
+        top: 120px;
+        left: 10px;
+        
+    }
+
+    .dash-head{
+        padding-top: 0;
+        top: 0px;
+    }
+
+    main{
+        top: 5px;
+        position: relative;
+        margin-left: 214px;
+        background-color: #EAEAEA;
+        height: 195vh;
+        border-left: 1px solid rgba(94, 98, 107, 0.10);
+    }
+
     .fa-xmark{
         display: none;
     }
@@ -153,11 +210,21 @@ ul{
     h1{
         margin-top: 30px;
     }
+}
 
+
+@media screen and (min-width: 1024px){
+    .main-sec{
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1300px){
     .main-sec{
         position: relative;
-        height: 100vh;
+        height: 200vh;
         width: 100%;
+        background-color: #EAEAEA;
     }
 
     .nav{
@@ -170,7 +237,9 @@ ul{
         height: 100vh;
         width: 213px;
         position: fixed;
+        background-color: #EAEAEA;
         z-index: 1;
+        border-right: none;
     }
 
     ul{
@@ -182,6 +251,7 @@ ul{
         position: absolute;
         top: 120px;
         left: 10px;
+        
     }
 
     .dash-head{
@@ -193,8 +263,8 @@ ul{
         top: 5px;
         position: relative;
         margin-left: 214px;
-        background: #F9F9F9;
+        background-color: #EAEAEA;
+        height: 195vh;
+        border-left: 1px solid rgba(94, 98, 107, 0.10);
     }
-
-
 }
