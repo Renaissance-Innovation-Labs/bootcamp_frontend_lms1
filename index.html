@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <p>This is where the login page should be written</p>
-  </body>
+<html>
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="./styles/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;500;600;700&family=Poppins:wght@500&family=Red+Hat+Display:wght@500;700;900&family=Source+Sans+3:ital,wght@0,200;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/84cc16b3b9.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container1">
+        <img src="./assets/login-image.png" alt="Background Image">
+    </div>
+   
+  <div class="container2">
+            <div class="Welcome">
+      <p>Welcome Back!</p>
+      <p>Welcome back! Please enter your details.</p>
+    </div>
+    <form>
+      <div>
+        <p class="inputname">Email Address</p>
+        <input type="email" placeholder="Myschoolemail.edu.ng" name="email" required>
+      </div>
+
+
+
+
+      <p class="inputname">Password</p>
+      <div class="passworddiv">
+        <input type="password"  placeholder="********************" name="password" required>
+        <i class="fa-sharp fa-regular fa-eye-slash"></i>
+      </div>
+
+
+
+
+
+
+      <div class="remember">
+        <div class="checkdiv">
+          <input type="checkbox" id="myCheckbox" class="styled-checkbox">
+          <label for="myCheckbox" class="checkbox-label"></label>
+          <p>Remember me</p>
+        </div>
+
+
+        <p>Forgot Password?</p>
+      </div>
+      <div class="logindiv">
+            <button>Login</button>
+            <p>Don’t have an account? <em><a href="./pages/sign-up.html">Sign Up</a></em></p>
+
+      </div>
+    </form>
+  </div>
+</body>
 </html>

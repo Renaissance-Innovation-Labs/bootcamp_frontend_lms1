@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    sign up page goes here. Add other html pages to the pages folder
-  </body>
+<html>
+<head>
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="../styles/sign-up.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;500;600;700&family=Poppins:wght@500&family=Red+Hat+Display:wght@500;700;900&family=Source+Sans+3:ital,wght@0,200;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container1">
+        <img src="../assets/login-image.png" alt="Background Image">
+    </div>
+   
+  <div class="container2">
+            <div class="sign-up">
+      <p class="input name">Sign Up</p>
+      <p>Please fill this form to create an account .</p>
+    </div>
+    <form>
+      <div>
+        <p class="input-names">Full Name</p>
+        <input type="text" name="fullname" required>
+      </div>
+
+
+      <div>
+      <p class="input-names">Email Address</p>
+        <input type="email"  name="email" required>
+      </div>
+
+
+      <div class="passworddiv">
+        <p class="input-names">Password</p>
+        <input type="password"  name="password" required>
+        <p class="input-names">(Password should be up to 8  characters)</p>
+      </div>
+      <div>
+        <p class="input-names">Confirm Password</p>
+        <input type="password">
+      </div>
+     
+        <div class="checkdiv">
+          <input class="styled-checkbox" type="checkbox" id="myCheckbox" >
+          <label for="myCheckbox" class="checkbox-label"></label>
+          <p>I accept terms and conditions</p>
+        </div>
+
+
+     
+      <div class="sign-up-div">
+            <button>Sign Up</button>
+            <p>Already have an account? <a href="../index.html">Sign in</a></p>
+
+      </div>
+    </form>
+  </div>
+</body>
 </html>
