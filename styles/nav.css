@@ -213,6 +213,12 @@ ul{
 }
 
 
+@media screen and (min-width: 1024px){
+    .main-sec{
+        height: 100vh;
+    }
+}
+
 @media screen and (min-width: 1300px){
     .main-sec{
         position: relative;
