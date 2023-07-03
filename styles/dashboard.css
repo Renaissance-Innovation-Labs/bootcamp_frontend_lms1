@@ -7,7 +7,7 @@
 body{
     font-family: 'Source Sans 3', sans-serif;
     position: relative;
-    background-color: #F9F9F9;
+    background-color: #EAEAEA;
 }
 
 
@@ -362,7 +362,10 @@ aside h3{
 }
 
 @media (min-width: 1300px) {
-
+    .nav{
+        border-right: none;
+    }
+    
     .main-sec{
         padding: 10px 40px;
     }
