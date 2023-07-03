@@ -4,7 +4,9 @@
     box-sizing: border-box;    
     font-family: 'Source Sans 3', sans-serif;
 }
-
+body{
+    background-color: #EAEAEA;
+}
 a.myCourses li{
     color: black;
     font-weight: 600;
@@ -70,22 +72,26 @@ header{
 .front{
     padding-left: 10px;
     border: 1px solid black;
-    background: #F6E2B7;
+    color: #fff;
+    background: #6F7378;
 }
 .back{
     padding-left: 10px;
     border: 1px solid black;
-    background: #ADEFF8;
+    color: #fff;
+    background: #6F7378;
 }
 .design{
     padding-left: 10px;
     border: 1px solid black;
-    background: #F8C2B7;
+    color: #fff;
+    background: #6F7378;
 }
 .manage{
     padding-left: 10px;
     border: 1px solid black;
-    background: #D4F5C6;
+    color: #fff;
+    background: #6F7378;
 }
 
 /* Course Section */
