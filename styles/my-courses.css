@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+a.myCourses li{
+    color: black;
+    font-weight: 600;
+} 
+
+.dash2{
+    background-color: white;
+    width: 90%;
+}
+
+.profile-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+header{
+    display: none;
+}
+
+.main-sec{
+    border-radius: 30px;
+    border-radius: 30px;
+    background-color: #EAEAEA;
+}
+
+.section-main{
+    padding: 15px;
+}
+
+.section-head h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.section-head p{
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.Stack-head{
+    font-size: 20px;
+    margin-top: 26px;
+    margin-bottom: 9px;
+}
+
+.stack-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stack-div{
+    display: grid;
+    gap: 8px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(94, 98, 107, 0.10);
+    padding: 15px;
+}
+
+.front{
+    padding-left: 10px;
+    border: 1px solid black;
+    background: #F6E2B7;
+}
+.back{
+    padding-left: 10px;
+    border: 1px solid black;
+    background: #ADEFF8;
+}
+.design{
+    padding-left: 10px;
+    border: 1px solid black;
+    background: #F8C2B7;
+}
+.manage{
+    padding-left: 10px;
+    border: 1px solid black;
+    background: #D4F5C6;
+}
+
+/* Course Section */
+
+.course-section{
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+.course-head{
+    margin-left: 15px;
+    margin-top: 100px;
+    margin-bottom: 33px;
+}
+
+.course-div h3{
+    font-size: 16px;
+}
+
+.progress-bar{
+    padding-bottom: 15px;
+}
+
+.course{
+    display: grid;
+    align-items: end;
+    /* padding: 13px 0px 22px 17px; */
+
+}
+
+.test{
+    padding: 13px 0px 22px 17px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(94, 98, 107, 0.10);
+}
+
+.course p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.action-btn{
+    padding-top: 25px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-btn{
+    border: none;
+    background: none;
+    font-weight: 600;
+}
+
+.del-btn{
+    font-weight: 600;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: #D24A4A;
+    color: white;
+}
+
+.message-assign{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+article{
+    display: grid;
+    gap: 20px;
+    border-radius: 12px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(94, 98, 107, 0.10);
+    padding: 15px;
+    margin-bottom: 35px;
+}
+
+article h2{
+    padding: 0px;
+}
+
+article p{
+    font-size: 14px;
+}
+
+h3{
+    padding-bottom: 10px;
+}
+
+.new-class{
+    display: flex;
+    align-items: center;
+}
+
+.new-class img{
+    width: 26px;
+    
+}
+
+aside{
+    display: grid;
+    padding: 15px;
+    margin-bottom: 40px;
+    gap: 20px;
+    border-radius: 12px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(94, 98, 107, 0.10);
+}
+
+aside h3{
+    font-size: 16px;
+}
+
+.assign-span{
+    color: rgb(10, 139, 245);
+}
+
+.assign-txt{
+    padding-left: 55px;
+    font-size: 14px;
+}
+
+.txt{
+    padding-left: 18px;
+}
+
+
+
+
+@media screen and (min-width: 760px){
+    main{
+        padding: 15px;
+    }
+    .dash2{
+        background-color: inherit;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-head p{
+        width: 437px;
+    }
+
+    .stack-form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    #nav{
+        border-left: 1px solid rgba(94, 98, 107, 0.10);
+    }
+
+    .search{
+        width: 300px;
+    }
+
+    .stack-form{
+        display: flex;
+        gap: 20px;
+    }
+
+    label{
+        width: 213px;
+        font-weight: 600;
+    }
+
+    .course-section{
+        /* width: fit-content; */
+        display: flex;
+        gap: 45px;
+    }
+
+    .course{
+        padding-right: 64px;
+    }
+
+    .action-btn{
+        padding-right: 15px;
+    }
+
+    .course p, .cont-btn{
+        font-size: 16px;
+    }
+
+    .message-assign{
+        padding: 15px;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .section-head h2, .section-head h3{
+        font-size: 24px;
+    }
+}
+
