@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/settings.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+</head>
+<body>
+    <section class="main-sec">
+        <nav id="nav" class="nav">
+            <div class="dash-head">
+                <h1>Dashboard</h1>
+                <div id="hamBtn">
+                    <i class="fa-solid fa-xmark fa-xl"></i>
+                </div>
+            </div>
+            <ul>
+                <div class="nav-div">
+                    <img src="../assets/dashboard.png" alt="icon">
+                    <a href="../pages/dashboard.html" class="dashboard"><li>Dashboard</li></a>
+                </div>
+
+                <div class="nav-div">
+                    <img src="../assets/book-open.png" alt="icon">
+                    <a href="../pages/my-courses.html" class="myCourses"><li>My Courses</li></a>
+                </div>
+
+                <div class="nav-div">
+                    <img src="../assets/award.png" alt="icon">
+                    <a href="#"><li>Accomplishments</li></a>
+                </div>
+
+                <div class="nav-div set">
+                    <img src="../assets/settings.png" alt="icon">
+                    <a href="../pages/settings.html" class="settings"><li>Settings</li></a>
+                </div>
+
+                <div class="nav-div">
+                    <img src="../assets/help-circle.png" alt="icon">
+                    <a href="#"><li>Help and Support</li></a>
+                </div>
+
+                <div class="nav-div logout">
+                    <img src="../assets/settings.png" alt="icon">
+                    <a href="../pages/settings.html" class="settings"><li>Log-out</li></a>
+                </div>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="nav-sec">
+                <div id="hamburger-btn">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+                </div>
+                <div class="profile-icon">
+                    <img src="../assets/icons-bell.png" alt="icon">
+                    <!-- <img src="../assets/icons-mail.png" alt="icon"> -->
+                    <p>Jane Joe</p>
+                    <img src="../assets/ellipse-1.png" alt="icon">
+                </div>
+            </div>
+
+            <!-- <header>
+                <div class="container-index">
+                    <h1 class="h1-index"></h1>
+                    <form class="form-index">
+                      <input class="input-index"  type="text" name="" placeholder="search...">
+                      <button class="button-index" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                  </div>
+                <div class="profile-icon-icon">
+                    <img src="../assets/icons-bell.png" alt="icon">
+                    <img src="../assets/icons-mail.png" alt="icon">
+                    <p>Jane Joe</p>
+                    <img src="../assets/ellipse-1.png" alt="icon">
+                </div>
+            </header> -->
+
+            <header>
+                <form class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="" id="" placeholder="search">
+                </form>
+                <div class="profile-icon">
+                    <img src="../assets/icons-bell.png" alt="icon">
+                    <img src="../assets/icons-mail.png" alt="icon">
+                    <p>Jane Joe</p>
+                    <img src="../assets/ellipse-1.png" alt="icon">
+                </div>
+            </header>
+
+
+    
+        <div class="head-div">
+        <h1 class="head">Edit Profile</h1>
+        </div>
+        <div class="user">
+            <div>
+                <img class="user-image" src="../assets/ellipse-1.png">
+            </div>
+            <div class="user-name">
+                <p class="user-name-name">Jane Doe</p>
+                <p class="user-email">Ebilambert56@gmail.com</p>
+            </div>
+        </div>
+
+        <h2 class="head2">Personal Information</h2>
+
+        <form class="form-user">
+
+            <div class="form-user-div"> 
+
+            <div class="user-box">
+                <label class="box-lebel" for="firstname">first name</label>
+                <input class="box-input" type="text"placeholder="Milliano"/>       
+            </div>
+            
+            <div class="user-box">
+                <label class="box-lebel" for="lastname">last name</label>
+                <input class="box-input" type="text"placeholder="Finecountry"/>       
+            </div>
+            
+
+            
+            <div class="user-box">
+                <label class="box-lebel" for="username">Phone Name</label>
+                <input class="box-input" type="number"placeholder="A little something about yourself."/>       
+            </div>
+
+            <div class="user-box">
+                <label class="box-lebel" for="username">Email</label>
+                <input class="box-input" type="email"placeholder="user@example.com"/>       
+            </div>
+            </div>
+
+            <div class="changes-div">
+                <button class="changes-changes">Save Changes</button>
+            </div>
+
+        </form>
+
+        <form class="form-password">
+
+            <h2 class="pass">Change password</h2>
+
+            <label class="password-box" for="Currentpassword">Current password</label>
+            <div class="password">
+                <input class="password-input" type="password"placeholder="*******************"/> 
+                <i class="fa fa-eye" aria-hidden="true"></i>      
+            </div>
+
+            <label class="password-box" for="Newpassword">New password</label>
+            <div class="password">
+                <input class="password-input" type="password"placeholder="*******************"/> 
+                <i class="fa fa-eye" aria-hidden="true"></i>      
+            </div>
+
+            <label class="password-box" for="Confirmpassword">Confirm password</label>
+            <div class="password">
+                <input class="password-input" type="password"placeholder="*******************"/> 
+                <i class="fa fa-eye" aria-hidden="true"></i>      
+            </div>
+
+            <div class="changes-div">
+                <button class="changes-changes">Save Changes</button>
+            </div>
+
+        </form>
+        
+    </main>
+
+    </section>
+
+
+
+    <script src="../javascript/nav.js"></script>
+</body>
+</html>
