@@ -60,6 +60,10 @@ a{
     position: relative;
 }
 
+.logout{
+    margin-top: 150px;
+}
+
 
 .show{
     position: fixed;
@@ -239,6 +243,10 @@ ul{
         position: fixed;
         background-color: #EAEAEA;
         z-index: 1;
+    }
+
+    .logout{
+        margin-top: 180px;
     }
 
     ul{
