@@ -2,26 +2,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
   const passwordInput = document.querySelector('input[name="password"]');
   const showPasswordToggle = document.querySelector('.fa-eye-slash');
+  const loginButton = document.querySelector('.login-button');
 
   form.addEventListener('submit', handleLogin);
   showPasswordToggle.addEventListener('click', togglePasswordVisibility);
 
   function handleLogin(event) {
     event.preventDefault();
+    loginButton.textContent = 'Logging In...';
+    loginButton.disabled = true;
 
     const email = document.querySelector('input[name="email"]').value;
     const password = passwordInput.value;
 
     if (isEmpty(email) || isEmpty(password)) {
       console.error('Email and password are required');
+      loginButton.textContent = 'Login';
+      loginButton.disabled = false;
       return;
     }
 
     const user = {
-            "email": email,
-            "password": password,
-          };
-          console.log({user})
+      "email": email,
+      "password": password,
+    };
 
     fetch('https://lms-boo.onrender.com/login', {
       method: 'POST',
@@ -32,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
       .then(response => response.json())
       .then(data => {
-        console.log('Login successful:', data);
-        const payload = {
+        console.log('', data);
+        const user = {
           "access_token": data.access_token,
           "token_type": data.token_type,
           "user": {
@@ -45,11 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
 
-        sessionStorage.setItem('payload', JSON.stringify(payload));
+        sessionStorage.setItem('user', JSON.stringify(user));
         window.location.href = '../pages/dashboard.html'; 
       })
       .catch(error => {
+        alert('Error during login. Please try again!.');
         console.error('Error during login:', error);
+        loginButton.textContent = 'Login';
+        loginButton.disabled = false;
       });
   }
 
@@ -61,4 +68,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const type = passwordInput.getAttribute('type');
     passwordInput.setAttribute('type', type === 'password' ? 'text' : 'password');
   }
+
 });
