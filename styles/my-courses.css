@@ -294,8 +294,11 @@ aside h3{
 
     .message-assign{
         padding: 15px;
-        flex-direction: row;
-        gap: 60px;
+        /* justify-content: space-between;
+        flex-direction: row; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 60px; */
     }
 
     .section-head h2, .section-head h3{
