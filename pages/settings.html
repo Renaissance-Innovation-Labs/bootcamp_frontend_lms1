@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LMS project</title>
+    <title>Edit Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/settings.css">
     <link rel="stylesheet" href="../styles/nav.css">
@@ -43,9 +43,9 @@
                     <a href="#"><li>Help and Support</li></a>
                 </div>
 
-                <div class="nav-div logout">
+                <div class="nav-div logout" id="logoutdiv">
                     <img src="../assets/settings.png" alt="icon">
-                    <a href="../pages/settings.html" class="settings"><li>Log-out</li></a>
+                    <a href="#" class="settings"><li>Log-out</li></a>
                 </div>
             </ul>
         </nav>
@@ -58,7 +58,7 @@
                 <div class="profile-icon">
                     <img src="../assets/icons-bell.png" alt="icon">
                     <!-- <img src="../assets/icons-mail.png" alt="icon"> -->
-                    <p>Jane Joe</p>
+                    <p class="jj">Jane Joe</p>
                     <img src="../assets/ellipse-1.png" alt="icon">
                 </div>
             </div>
@@ -82,12 +82,12 @@
             <header>
                 <form class="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" name="" id="" placeholder="search">
+                    <input type="search" name="output" id="input" placeholder="search">
                 </form>
                 <div class="profile-icon">
                     <img src="../assets/icons-bell.png" alt="icon">
                     <img src="../assets/icons-mail.png" alt="icon">
-                    <p>Jane Joe</p>
+                    <p class="file">Jane Joe</p>
                     <img src="../assets/ellipse-1.png" alt="icon">
                 </div>
             </header>
@@ -103,7 +103,7 @@
             </div>
             <div class="user-name">
                 <p class="user-name-name">Jane Doe</p>
-                <p class="user-email">Ebilambert56@gmail.com</p>
+                <p class="user-email p">Ebilambert56@gmail.com</p>
             </div>
         </div>
 
@@ -115,25 +115,25 @@
 
             <div class="user-box">
                 <label class="box-lebel" for="firstname">first name</label>
-                <input class="box-input" type="text"placeholder="Milliano"/>       
+                <input class="box-input first" type="text"placeholder="Milliano"/>       
             </div>
             
             <div class="user-box">
                 <label class="box-lebel" for="lastname">last name</label>
-                <input class="box-input" type="text"placeholder="Finecountry"/>       
+                <input class="box-input last" type="text"placeholder="Finecountry"/>       
             </div>
             
 
             
             <div class="user-box">
                 <label class="box-lebel" for="username">Phone Name</label>
-                <input class="box-input" type="number"placeholder="A little something about yourself."/>       
+                <input class="box-input phone-no" type="number"placeholder="123"/>       
             </div>
 
-            <div class="user-box">
+            <!-- <div class="user-box">
                 <label class="box-lebel" for="username">Email</label>
                 <input class="box-input" type="email"placeholder="user@example.com"/>       
-            </div>
+            </div> -->
             </div>
 
             <div class="changes-div">
@@ -146,11 +146,11 @@
 
             <h2 class="pass">Change password</h2>
 
-            <label class="password-box" for="Currentpassword">Current password</label>
+            <!-- <label class="password-box" for="Currentpassword">Current password</label>
             <div class="password">
                 <input class="password-input" type="password"placeholder="*******************"/> 
                 <i class="fa fa-eye" aria-hidden="true"></i>      
-            </div>
+            </div> -->
 
             <label class="password-box" for="Newpassword">New password</label>
             <div class="password">
@@ -177,5 +177,7 @@
 
 
     <script src="../javascript/nav.js"></script>
+    <script src="../javascript/settings.js"></script>
+    <script src="../javascript/logout.js"></script>
 </body>
 </html>
