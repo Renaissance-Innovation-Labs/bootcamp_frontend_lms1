@@ -1,5 +1,5 @@
 // get session storage for users
-const users = sessionStorage.getItem('payload');
+const users = sessionStorage.getItem('user');
 let profile = JSON.parse(users);
 // make the profile name dynamic
     document.querySelector('.profile').textContent = `${profile.user.firstname} ${profile.user.lastname}`;
@@ -15,7 +15,8 @@ let profile = JSON.parse(users);
 
 
 
-
+function fetchStack() {
+  add.textContent = 'Loading Please Wait...'
 
 // Fetch course stacks from the API
 fetch("https://lms-boo.onrender.com/stack/")
@@ -29,6 +30,8 @@ fetch("https://lms-boo.onrender.com/stack/")
 .catch(error => {
 console.error("Error fetching course stacks:", error);
 });
+
+}fetchStack();
 
 
 // Function to display the course stacks on the HTML page
@@ -108,12 +111,18 @@ function courseSelection(event) {
 
 //Fetch the selected course from the API
 function displayCourseToSection() {
+  let load =  document.createElement("p");
+  load.innerHTML = `<img src="../assets/Spinner.gif" alt="icon">`;
+  const courseSection = document.querySelector(".course-section");
+  courseSection.appendChild(load);
+  
 fetch(`https://lms-boo.onrender.com/stack/course/`, {
   method: "GET",
   headers: headers
 })
 .then(response => response.json())
 .then(courses => {
+  load.style.display = "none";
   console.log(courses )
 // Append the selected course to the course section
 sessionStorage.setItem("courses", courses)
@@ -168,15 +177,14 @@ contBtn.classList.add("cont-btn");
 const delBtn = document.createElement("button");
 delBtn.textContent = `Delete`;
 delBtn.classList.add("del-btn");
+
+
+
+// Deleting the course from the API
 delBtn.addEventListener("click", () => {
   delBtn.textContent = `Deleting`;
-  // Delete the course from the API
   deleteCourseFromAPI(course.course_code);
-  // Remove the course from the HTML section
-  courseSection.removeChild(courseDiv);
-  location.reload();
-  // Update the displayed count in the HTML
-  displayCourseToSection() 
+  
 });
 
 // Append the course name and details to the course div
@@ -210,7 +218,7 @@ function countDisplay (courses) {
 
 // Function to delete a course from the API
 function deleteCourseFromAPI(courseCode) {
-  let del = document.querySelector(".load");
+  let del = document.querySelector(".del");
   del.textContent = 'Deleting Please Wait...'
   fetch(`https://lms-boo.onrender.com/stack/course/${courseCode}`, {
     method: "DELETE",
@@ -218,9 +226,10 @@ function deleteCourseFromAPI(courseCode) {
   })
     .then(response => response.json())
     .then(courses => {
+      displayCourseToSection() 
       console.log("Course deleted:",courses);
       del.textContent = '';
-      // location.reload();
+      location.reload();
     })
     .catch(error => {
       console.error("Error deleting course:", error);
