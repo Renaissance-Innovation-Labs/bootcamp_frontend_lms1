@@ -18,7 +18,6 @@ let profile = JSON.parse(users);
 function fetchStack() {
   add.textContent = 'Loading Please Wait...'
 
-
 // Fetch course stacks from the API
 fetch("https://lms-boo.onrender.com/stack/")
 .then(response => response.json())
@@ -181,15 +180,11 @@ delBtn.classList.add("del-btn");
 
 
 
+// Deleting the course from the API
 delBtn.addEventListener("click", () => {
   delBtn.textContent = `Deleting`;
-  // Delete the course from the API
   deleteCourseFromAPI(course.course_code);
   
-  // // Remove the course from the HTML section
-  // courseSection.removeChild(courseDiv);
-  // location.reload();
-  // Update the displayed count in the HTML
 });
 
 // Append the course name and details to the course div

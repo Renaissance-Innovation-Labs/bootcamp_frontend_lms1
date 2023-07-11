@@ -1,42 +1,36 @@
 const users = sessionStorage.getItem('user');
 let profile = JSON.parse(users);
 
-    document.querySelector('.profile').textContent = `${profile.user.firstname} ${profile.user.lastname}`;
-    document.querySelector('.user').textContent = `${profile.user.firstname} ${profile.user.lastname}`;
-    const accessToken = profile.access_token;
-    const headers = {
-      'Content-Type': 'application/json',
-      'Authorization':  `Bearer ${accessToken}`
-    };
+document.querySelector('.profile').textContent = `${profile.user.firstname} ${profile.user.lastname}`;
+document.querySelector('.user').textContent = `${profile.user.firstname} ${profile.user.lastname}`;
+const accessToken = profile.access_token;
+const headers = {
+    'Content-Type': 'application/json',
+    'Authorization':  `Bearer ${accessToken}`
+};
 
 
-    function displayCourseToSection() {
-        fetch(`https://lms-boo.onrender.com/stack/course/`, {
-          method: "GET",
-          headers: headers
-        })
-        .then(response => response.json())
-        .then(courses => {
-          console.log(courses);
+function displayCourseToSection() {
+    fetch(`https://lms-boo.onrender.com/stack/course/`, {
+        method: "GET",
+        headers: headers
+    })
+    .then(response => response.json())
+    .then(courses => {
+        console.log(courses);
 
-        sessionStorage.setItem("courses", courses)
-        countDisplay (courses);
-        })
-        .catch(error => {
-        console.error("Error fetching course:", error);
-        });
-        };displayCourseToSection();
+    sessionStorage.setItem("courses", courses)
+    countDisplay (courses);
+    })
+    .catch(error => {
+    console.error("Error fetching course:", error);
+    });
+    };displayCourseToSection();
 
 function countDisplay (courses) {
-    const countSpan = document.querySelector("#course-num");
-    countSpan.textContent = courses.length;
-  }
-
-
-
-
-
-
+const countSpan = document.querySelector("#course-num");
+countSpan.textContent = courses.length;
+}
 
 
 
