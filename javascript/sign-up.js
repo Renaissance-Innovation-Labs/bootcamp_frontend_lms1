@@ -17,20 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (isEmpty(firstname) || isEmpty(lastname) || isEmpty(phone) || isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)) {
       console.error('All fields are required');
-      signUpButton.textContent = 'Sign Up'; // Restore the signup button text
+      signUpButton.textContent = 'Sign Up';
       return;
     }
 
     if (!isValidEmail(email)) {
       console.error('Invalid email format');
-      signUpButton.textContent = 'Sign Up'; // Restore the signup button text
+      signUpButton.textContent = 'Sign Up'; 
       return;
     }
 
     if (!passwordsMatch(password, confirmPassword)) {
       alert('Passwords do not match.');
       console.error();('Passwords do not match');
-      signUpButton.textContent = 'Sign Up'; // Restore the signup button text
+      signUpButton.textContent = 'Sign Up';
       return;
     }
 
@@ -59,14 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
           "email": email,
           "password": password,
         };
-        signUpButton.textContent = 'Sign Up'; // Restore the signup button text
+        signUpButton.textContent = 'Sign Up';
         sessionStorage.setItem('user', JSON.stringify(user));
-        window.location.href = '../index.html'; // Redirect to the signin page
+        window.location.href = '../index.html'; 
       })
       .catch(error => {
         alert('Error during login. Please try again!.');
         console.error('Error during signup:', error);
-        signUpButton.textContent = 'Sign Up'; // Restore the signup button text
+        signUpButton.textContent = 'Sign Up';
       });
   }
 
